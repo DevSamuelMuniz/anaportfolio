@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.black-section {
+    background-color: #000;
+    width: 20%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 90px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    color: #000;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 200px;
+}
+
+.menu li {
+    margin-bottom: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.current-folder {
+    position: relative;
+    width: 100%;
+    height: 1.5px;
+    background-color: #424242;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.menu a:hover {
+    position: relative;
+}
+
+.menu a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    animation: expand 0.3s ease forwards;
+}
+
+@keyframes expand {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.white-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    flex-direction: row; /* Alterado para linha */
+}
+
+.imagem>img{
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 460px;
+    margin-left: 60px;
+}
+
+.texto{
+    margin-bottom: 480px;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+.texto>h1{
+    font-weight: 400;
+}
+
+.texto>h2{
+    font-weight: 300;
+}
+
+.texto>h3{
+    font-weight: 300;
+}
